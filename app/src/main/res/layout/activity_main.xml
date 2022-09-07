@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- title의 width가 wrap이면 글자가 짤림 -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@drawable/main_gradient"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Check Mi" android:textColor="@color/white"
+            android:fontFamily="@font/shirkhand_reaular"
+        android:layout_gravity="center"
+        android:id="@+id/toolbar_title"
+        android:textSize="30sp"
+        />
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <Button
+        android:id="@+id/circle_table"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/circle_table"
+        app:backgroundTint="@color/table_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <Button
+        android:id="@+id/blackboard"
+        android:layout_width="183dp"
+        android:layout_height="8dp"
+        android:background="@drawable/rectangle_table"
+        app:backgroundTint="@color/table_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.445"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/circle_table"
+        app:layout_constraintVertical_bias="0.431" />
+
+    <Button
+        android:id="@+id/blackboard2"
+        android:layout_width="122dp"
+        android:layout_height="6dp"
+        android:layout_marginStart="56dp"
+        android:background="@drawable/rectangle_table"
+        app:backgroundTint="@color/table_color"
+        app:layout_constraintBottom_toTopOf="@+id/circle_table"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.561" />
+
+    <Button
+        android:id="@+id/blackboard3"
+        android:layout_width="84dp"
+        android:layout_height="8dp"
+        android:background="@drawable/rectangle_table"
+        app:backgroundTint="@color/table_color"
+        app:layout_constraintBottom_toTopOf="@+id/circle_table"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toEndOf="@+id/blackboard2"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.561" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
