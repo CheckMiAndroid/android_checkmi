@@ -1,13 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" tools:context=".MainActivity">
-    <!-- // -->
-    <!-- System UI 인지 로고 인지 그 위에 무언가 -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <!--//-->
+    <!--System UI 인지 로고 인지 그 위에 무언가-->
     <ImageView
         android:id="@+id/Back_green"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:background="@drawable/system_ui"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
@@ -28,66 +37,307 @@
         android:id="@+id/menu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="20dp"
         android:background="@drawable/menu"
-        app:layout_constraintBottom_toBottomOf="@+id/Back_green"
         app:layout_constraintEnd_toEndOf="@+id/Back_green"
+        app:layout_constraintStart_toEndOf="@+id/Check_Mi"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="35dp" />
+
+    <!--//-->
+    <!--자리 이외 View-->
+    <LinearLayout
+        android:id="@+id/View"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/View1_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/View_1"
+            android:rotation="0" />
+
+        <ImageView
+            android:id="@+id/View_2_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/View_2" />
+
+        <ImageView
+            android:id="@+id/View_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/View_3" />
+
+        <ImageView
+            android:id="@+id/View_2_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/View_2" />
+
+        <ImageView
+            android:id="@+id/View1_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:background="@drawable/View_1"
+            android:rotation="270" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/VIew"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/SEat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Back_green"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/View4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/View_4" />
+
+        <ImageView
+            android:id="@+id/View5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="55dp"
+            android:background="@drawable/View_5" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/View7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/View_7"
+        app:layout_constraintBottom_toBottomOf="@id/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SEAT"
+        tools:ignore="MissingConstraints" />
+
+
+    <!--//-->
+    <!--자리 버튼-->
+    <!--창가 자리-->
+    <LinearLayout
+        android:id="@+id/Seat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <ImageButton
+            android:id="@+id/Seat1_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/Seat_1" />
+
+        <ImageButton
+            android:id="@+id/Seat1_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/Seat_1" />
+
+        <ImageView
+            android:id="@+id/View6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/View_6" />
+
+        <ImageButton
+            android:id="@+id/Seat2_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/Seat_2" />
+
+        <ImageButton
+            android:id="@+id/Seat2_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/Seat_2" />
+
+    </LinearLayout>
+    <!--서버 자리-->
+    <LinearLayout
+        android:id="@+id/SEat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/SEAT"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <ImageButton
+            android:id="@+id/Seat3_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/Seat_3" />
+
+        <ImageButton
+            android:id="@+id/Seat3_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:background="@drawable/Seat_3" />
+
+        <ImageButton
+            android:id="@+id/Seat3_3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="7dp"
+            android:background="@drawable/Seat_3" />
+
+        <ImageButton
+            android:id="@+id/Seat3_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:background="@drawable/Seat_3"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <ImageButton
+            android:id="@+id/Seat3_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:background="@drawable/Seat_3" />
+
+
+    </LinearLayout>
+    <!--안드? 자리-->
+    <LinearLayout
+        android:id="@+id/SEAt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Seat6"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <ImageButton
+            android:id="@+id/Seat4_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/Seat_4" />
+
+        <ImageButton
+            android:id="@+id/Seat4_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/Seat_4" />
+
+    </LinearLayout>
+    <!--웹 자리-->
+    <LinearLayout
+        android:id="@+id/SEAT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SEat"
+        tools:ignore="MissingConstraints">
+
+        <ImageButton
+            android:id="@+id/Seat5_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/Seat_5" />
+
+        <ImageButton
+            android:id="@+id/Seat5_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:background="@drawable/Seat_5" />
+
+        <ImageButton
+            android:id="@+id/Seat5_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:background="@drawable/Seat_5" />
+
+        <ImageButton
+            android:id="@+id/Seat5_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:background="@drawable/Seat_5" />
+
+        <ImageButton
+            android:id="@+id/Seat5_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:background="@drawable/Seat_5" />
+
+    </LinearLayout>
+    <!--중간 원 자리-->
+    <ImageButton
+        android:id="@+id/Seat6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/Seat_6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
-    <!-- // -->
-    <!-- 자리 이외 View -->
-    <LinearLayout android:id="@+id/View" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" tools:layout_editor_absoluteX="0dp" tools:layout_editor_absoluteY="145dp" tools:ignore="MissingConstraints">
-        <ImageView android:id="@+id/View1_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/View_1" android:rotation="0"/>
-        <ImageView android:id="@+id/View_2_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:background="@drawable/View_2"/>
-        <ImageView android:id="@+id/View_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:background="@drawable/View_3"/>
-        <ImageView android:id="@+id/View_2_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:background="@drawable/View_2"/>
-        <ImageView android:id="@+id/View1_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="17dp" android:background="@drawable/View_1" android:rotation="270"/>
-    </LinearLayout>
-    <LinearLayout android:id="@+id/VIew" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal" tools:layout_editor_absoluteX="110dp" tools:layout_editor_absoluteY="142dp" tools:ignore="MissingConstraints">
-        <ImageView android:id="@+id/View4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/View_4"/>
-        <ImageView android:id="@+id/View5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/View_5" android:layout_marginLeft="55dp"/>
-    </LinearLayout>
-    <ImageView android:id="@+id/View7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/View_7" tools:ignore="MissingConstraints" tools:layout_editor_absoluteX="90dp" tools:layout_editor_absoluteY="570dp"/>
-    <!-- // -->
-    <!-- 자리 버튼 -->
-    <LinearLayout android:id="@+id/Seat" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" tools:layout_editor_absoluteX="370dp" tools:layout_editor_absoluteY="155dp" tools:ignore="MissingConstraints">
-        <ImageButton android:id="@+id/Seat1_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/Seat_1"/>
-        <ImageButton android:id="@+id/Seat1_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/Seat_1" android:layout_marginTop="5dp"/>
-        <ImageView android:id="@+id/View6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/View_6" android:layout_marginTop="5dp" android:layout_marginLeft="30dp"/>
-        <ImageButton android:id="@+id/Seat2_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/Seat_2" android:layout_marginTop="30dp"/>
-        <ImageButton android:id="@+id/Seat2_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/Seat_2" android:layout_marginTop="5dp"/>
-    </LinearLayout>
-    <LinearLayout android:id="@+id/SEat" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal" tools:layout_editor_absoluteX="45dp" tools:layout_editor_absoluteY="230dp" tools:ignore="MissingConstraints">
-        <ImageButton android:id="@+id/Seat3_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/Seat_3"/>
-        <ImageButton android:id="@+id/Seat3_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/Seat_3" android:layout_marginLeft="7dp"/>
-        <ImageButton android:id="@+id/Seat3_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/Seat_3" android:layout_marginLeft="7dp"/>
-        <ImageButton android:id="@+id/Seat3_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/Seat_3" android:layout_marginLeft="7dp"/>
-        <ImageButton android:id="@+id/Seat3_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/Seat_3" android:layout_marginLeft="7dp"/>
-    </LinearLayout>
-    <LinearLayout android:id="@+id/SEAt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" tools:layout_editor_absoluteX="310dp" tools:layout_editor_absoluteY="275dp" tools:ignore="MissingConstraints">
-        <ImageButton android:id="@+id/Seat4_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/Seat_4"/>
-        <ImageButton android:id="@+id/Seat4_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/Seat_4" android:layout_marginTop="10dp"/>
-    </LinearLayout>
-    <LinearLayout android:id="@+id/SEAT" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal" tools:layout_editor_absoluteX="45dp" tools:layout_editor_absoluteY="460dp" tools:ignore="MissingConstraints">
-        <ImageButton android:id="@+id/Seat5_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/Seat_5"/>
-        <ImageButton android:id="@+id/Seat5_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/Seat_5" android:layout_marginLeft="7dp"/>
-        <ImageButton android:id="@+id/Seat5_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/Seat_5" android:layout_marginLeft="7dp"/>
-        <ImageButton android:id="@+id/Seat5_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/Seat_5" android:layout_marginLeft="7dp"/>
-        <ImageButton android:id="@+id/Seat5_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/Seat_5" android:layout_marginLeft="7dp"/>
-    </LinearLayout>
-    <ImageButton android:id="@+id/Seat6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/Seat_6" tools:ignore="MissingConstraints" tools:layout_editor_absoluteX="150dp" tools:layout_editor_absoluteY="310dp"/>
-    <ImageButton android:id="@+id/Seat7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/Seat_7" tools:layout_editor_absoluteX="330dp" tools:layout_editor_absoluteY="540dp" tools:ignore="MissingConstraints"/>
-    <!-- // -->
-    <!-- 두카미 로고 아래 -->
+    <!--김건호 선배님 자리-->
+    <ImageButton
+        android:id="@+id/Seat7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/Seat_7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/View7"
+        app:layout_constraintTop_toBottomOf="@+id/Seat"
+        tools:ignore="MissingConstraints" />
+
+    <!--//-->
+    <!--두카미 아래 로고 -->
     <ImageView
         android:id="@+id/logo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginBottom="20dp"
         android:background="@drawable/ducami_logo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/View7"
         tools:ignore="MissingConstraints" />
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

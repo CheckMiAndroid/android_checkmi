@@ -1,13 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:background="#E4E4E4" tools:context=".CamCheckActivity">
-    <ImageView android:id="@+id/back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/back_d" tools:ignore="MissingConstraints" tools:layout_editor_absoluteX="55dp" tools:layout_editor_absoluteY="160dp"/>
-    <!--  -->
-    <!-- 이름 값 자리 -->
-    <TextView android:id="@+id/Nick_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="홍길동" android:textColor="#808080" android:textSize="25dp" android:textStyle="bold|normal" tools:ignore="MissingConstraints" tools:layout_editor_absoluteX="170dp" tools:layout_editor_absoluteY="180dp"/>
-    <!--  -->
-    <!-- 사진 값 자리 -->
-    <ImageView android:id="@+id/cam_check" android:layout_width="260dp" android:layout_height="260dp" android:background="@drawable/ic_launcher_background" tools:ignore="MissingConstraints" tools:layout_editor_absoluteX="75dp" tools:layout_editor_absoluteY="235dp"/>
-    <!--  -->
-    <!-- 안내 -->
-    <TextView android:id="@+id/guide" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="얼굴을 비춰주세요." android:textColor="#FFFFFF" android:textSize="18dp" android:textStyle="bold|normal" tools:ignore="MissingConstraints" tools:layout_editor_absoluteX="135dp" tools:layout_editor_absoluteY="470dp"/>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CamCheckActivity">
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back_d"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="160dp" />
+
+    <!---->
+    <!--이름 값 자리-->
+    <TextView
+        android:id="@+id/Nick_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="홍길동"
+        android:textColor="#808080"
+        android:textSize="25dp"
+        android:textStyle="bold|normal"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="170dp"
+        tools:layout_editor_absoluteY="180dp" />
+
+    <!---->
+    <!--사진 값 자리-->
+    <ImageView
+        android:id="@+id/cam_check"
+        android:layout_width="260dp"
+        android:layout_height="260dp"
+        android:background="@drawable/ic_launcher_background"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="75dp"
+        tools:layout_editor_absoluteY="235dp" />
+
+    <!---->
+    <!--안내-->
+    <TextView
+        android:id="@+id/guide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="얼굴을 비춰주세요."
+        android:textColor="#FFFFFF"
+        android:textSize="18dp"
+        android:textStyle="bold|normal"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="135dp"
+        tools:layout_editor_absoluteY="470dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
