@@ -59,7 +59,7 @@
             android:id="@+id/View1_1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/View_1"
+            android:background="@drawable/view_1"
             android:rotation="0" />
 
         <ImageView
@@ -67,28 +67,28 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
-            android:background="@drawable/View_2" />
+            android:background="@drawable/view_2" />
 
         <ImageView
             android:id="@+id/View_3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
-            android:background="@drawable/View_3" />
+            android:background="@drawable/view_3" />
 
         <ImageView
             android:id="@+id/View_2_2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
-            android:background="@drawable/View_2" />
+            android:background="@drawable/view_2" />
 
         <ImageView
             android:id="@+id/View1_2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="17dp"
-            android:background="@drawable/View_1"
+            android:background="@drawable/view_1"
             android:rotation="270" />
 
     </LinearLayout>
@@ -108,14 +108,14 @@
             android:id="@+id/View4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/View_4" />
+            android:background="@drawable/view_4" />
 
         <ImageView
             android:id="@+id/View5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="55dp"
-            android:background="@drawable/View_5" />
+            android:background="@drawable/view_5" />
 
     </LinearLayout>
 
@@ -123,7 +123,7 @@
         android:id="@+id/View7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/View_7"
+        android:background="@drawable/view_7"
         app:layout_constraintBottom_toBottomOf="@id/logo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -148,14 +148,14 @@
             android:id="@+id/Seat1_1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/Seat_1" />
+            android:background="@drawable/seat_1" />
 
         <ImageButton
             android:id="@+id/Seat1_2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
-            android:background="@drawable/Seat_1" />
+            android:background="@drawable/seat_1" />
 
         <ImageView
             android:id="@+id/View6"
@@ -163,21 +163,21 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"
             android:layout_marginTop="5dp"
-            android:background="@drawable/View_6" />
+            android:background="@drawable/view_6" />
 
         <ImageButton
             android:id="@+id/Seat2_1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
-            android:background="@drawable/Seat_2" />
+            android:background="@drawable/seat_2" />
 
         <ImageButton
             android:id="@+id/Seat2_2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
-            android:background="@drawable/Seat_2" />
+            android:background="@drawable/seat_2" />
 
     </LinearLayout>
     <!--서버 자리-->
@@ -196,28 +196,28 @@
             android:id="@+id/Seat3_1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/Seat_3" />
+            android:background="@drawable/seat_3" />
 
         <ImageButton
             android:id="@+id/Seat3_2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="7dp"
-            android:background="@drawable/Seat_3" />
+            android:background="@drawable/seat_3" />
 
         <ImageButton
             android:id="@+id/Seat3_3"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_marginLeft="7dp"
-            android:background="@drawable/Seat_3" />
+            android:background="@drawable/seat_3" />
 
         <ImageButton
             android:id="@+id/Seat3_4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="7dp"
-            android:background="@drawable/Seat_3"
+            android:background="@drawable/seat_3"
             app:layout_constraintEnd_toEndOf="parent" />
 
         <ImageButton
@@ -225,7 +225,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="7dp"
-            android:background="@drawable/Seat_3" />
+            android:background="@drawable/seat_3" />
 
 
     </LinearLayout>
@@ -245,14 +245,14 @@
             android:id="@+id/Seat4_1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/Seat_4" />
+            android:background="@drawable/seat_4" />
 
         <ImageButton
             android:id="@+id/Seat4_2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:background="@drawable/Seat_4" />
+            android:background="@drawable/seat_4" />
 
     </LinearLayout>
     <!--웹 자리-->
@@ -271,35 +271,35 @@
             android:id="@+id/Seat5_1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/Seat_5" />
+            android:background="@drawable/seat_5" />
 
         <ImageButton
             android:id="@+id/Seat5_2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="7dp"
-            android:background="@drawable/Seat_5" />
+            android:background="@drawable/seat_5" />
 
         <ImageButton
             android:id="@+id/Seat5_3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="7dp"
-            android:background="@drawable/Seat_5" />
+            android:background="@drawable/seat_5" />
 
         <ImageButton
             android:id="@+id/Seat5_4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="7dp"
-            android:background="@drawable/Seat_5" />
+            android:background="@drawable/seat_5" />
 
         <ImageButton
             android:id="@+id/Seat5_5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="7dp"
-            android:background="@drawable/Seat_5" />
+            android:background="@drawable/seat_5" />
 
     </LinearLayout>
     <!--중간 원 자리-->
@@ -307,7 +307,7 @@
         android:id="@+id/Seat6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/Seat_6"
+        android:background="@drawable/seat_6"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -318,7 +318,7 @@
         android:id="@+id/Seat7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/Seat_7"
+        android:background="@drawable/seat_7"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/View7"
         app:layout_constraintTop_toBottomOf="@+id/Seat"

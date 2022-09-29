@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         //list로 각각의 member를 가져오기
-        val list : List<View> = listOf(binding.Seat11, binding.Seat11)
+        val list : List<View> = listOf()
 
 //        list[0].setOnClickListener()
 
@@ -33,6 +33,22 @@ class MainActivity : AppCompatActivity() {
             override fun onResponse(call: Call<MemberList>, response: Response<MemberList>) {
                 if (response.isSuccessful) {
                     Log.d("member", "onResponse: ${response.body()}")
+
+                    var index : Int = 0
+
+                    for (i : View in list ){
+
+
+                        if(response.body()!!.data[index].isAttend==1){
+
+
+
+                        }
+
+                        index++
+
+                    }
+
                 }
             }
 
