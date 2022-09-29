@@ -1,7 +1,8 @@
-package com.example.checkmi
+package com.example.checkmi.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.checkmi.R
 
 class CamCheckActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
