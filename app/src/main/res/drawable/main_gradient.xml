@@ -4,5 +4,7 @@
         android:angle="270"
         android:type="linear"
         android:startColor="@color/toolbar_top_color"
-        android:endColor="@color/toolbar_row_color"/>
+        android:endColor="@color/toolbar_row_color"
+
+        />
 </shape>

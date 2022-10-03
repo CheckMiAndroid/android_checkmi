@@ -5,8 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".view.MainActivity">
-
+    tools:context="view.MainActivity"
+    android:background="#FFFFFF">
 
     <!--//-->
     <!--System UI 인지 로고 인지 그 위에 무언가-->
@@ -33,7 +33,8 @@
         app:layout_constraintTop_toTopOf="@+id/Back_green"
         tools:ignore="MissingConstraints" />
 
-    <ImageButton
+    <!--
+    <ImageView
         android:id="@+id/menu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -42,6 +43,7 @@
         app:layout_constraintStart_toEndOf="@+id/Check_Mi"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteY="35dp" />
+        -->
 
     <!--//-->
     <!--자리 이외 View-->
@@ -119,6 +121,11 @@
 
     </LinearLayout>
 
+
+    <!--//-->
+    <!--자리 버튼-->
+    <!--창가 자리-->
+
     <ImageView
         android:id="@+id/View7"
         android:layout_width="wrap_content"
@@ -130,10 +137,6 @@
         app:layout_constraintTop_toBottomOf="@+id/SEAT"
         tools:ignore="MissingConstraints" />
 
-
-    <!--//-->
-    <!--자리 버튼-->
-    <!--창가 자리-->
     <LinearLayout
         android:id="@+id/Seat"
         android:layout_width="wrap_content"
@@ -144,18 +147,34 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints">
 
-        <ImageButton
-            android:id="@+id/Seat1_1"
+        <ImageView
+            android:id="@+id/Seat14"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/seat_1" />
+            android:src="@drawable/ic_new_seat_41"
+            app:tint="#DADADA"/>
 
-        <ImageButton
-            android:id="@+id/Seat1_2"
+        <ImageView
+            android:id="@+id/Seat15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_new_seat_4"
+            app:tint="#DADADA"/>
+
+        <ImageView
+            android:id="@+id/Seat16"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
-            android:background="@drawable/seat_1" />
+            android:src="@drawable/ic_new_seat_41"
+            app:tint="#DADADA"/>
+
+        <ImageView
+            android:id="@+id/Seat17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_new_seat_4"
+            app:tint="#DADADA"/>
 
         <ImageView
             android:id="@+id/View6"
@@ -165,19 +184,20 @@
             android:layout_marginTop="5dp"
             android:background="@drawable/view_6" />
 
-        <ImageButton
-            android:id="@+id/Seat2_1"
+        <ImageView
+            android:id="@+id/Seat18"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:background="@drawable/seat_2" />
+            android:src="@drawable/ic_new_seat_2"
+            app:tint="#DADADA"/>
 
-        <ImageButton
-            android:id="@+id/Seat2_2"
+        <ImageView
+            android:id="@+id/Seat19"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
-            android:background="@drawable/seat_2" />
+            android:src="@drawable/ic_new_seat_2"
+            app:tint="#DADADA"/>
 
     </LinearLayout>
     <!--서버 자리-->
@@ -192,40 +212,45 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints">
 
-        <ImageButton
-            android:id="@+id/Seat3_1"
+        <ImageView
+            android:id="@+id/Seat0"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/seat_3" />
+            android:src="@drawable/ic_new_seat_3"
+            />
 
-        <ImageButton
-            android:id="@+id/Seat3_2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="7dp"
-            android:background="@drawable/seat_3" />
-
-        <ImageButton
-            android:id="@+id/Seat3_3"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="7dp"
-            android:background="@drawable/seat_3" />
-
-        <ImageButton
-            android:id="@+id/Seat3_4"
+        <ImageView
+            android:id="@+id/Seat1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="7dp"
-            android:background="@drawable/seat_3"
-            app:layout_constraintEnd_toEndOf="parent" />
+            android:src="@drawable/ic_new_seat_3"
+            app:tint="#DADADA"/>
 
-        <ImageButton
-            android:id="@+id/Seat3_5"
+        <ImageView
+            android:id="@+id/Seat2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="7dp"
-            android:background="@drawable/seat_3" />
+            android:src="@drawable/ic_new_seat_3"
+            app:tint="#DADADA"/>
+
+        <ImageView
+            android:id="@+id/Seat3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:src="@drawable/ic_new_seat_3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:tint="#DADADA"/>
+
+        <ImageView
+            android:id="@+id/Seat4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:src="@drawable/ic_new_seat_3"
+            app:tint="#DADADA"/>
 
 
     </LinearLayout>
@@ -237,22 +262,38 @@
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/Seat6"
+        app:layout_constraintStart_toEndOf="@+id/Seat21"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints">
 
-        <ImageButton
-            android:id="@+id/Seat4_1"
+        <ImageView
+            android:id="@+id/Seat5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/seat_4" />
+            android:src="@drawable/ic_new_seat_41"
+            />
 
-        <ImageButton
-            android:id="@+id/Seat4_2"
+        <ImageView
+            android:id="@+id/Seat6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_new_seat_4"
+            />
+
+        <ImageView
+            android:id="@+id/Seat7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:background="@drawable/seat_4" />
+            android:src="@drawable/ic_new_seat_41"
+            />
+
+        <ImageView
+            android:id="@+id/Seat8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_new_seat_4"
+            />
 
     </LinearLayout>
     <!--웹 자리-->
@@ -267,44 +308,44 @@
         app:layout_constraintTop_toBottomOf="@+id/SEat"
         tools:ignore="MissingConstraints">
 
-        <ImageButton
-            android:id="@+id/Seat5_1"
+        <ImageView
+            android:id="@+id/Seat13"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/seat_5" />
+            android:src="@drawable/ic_new_seat_3" />
 
-        <ImageButton
-            android:id="@+id/Seat5_2"
+        <ImageView
+            android:id="@+id/Seat12"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="7dp"
-            android:background="@drawable/seat_5" />
+            android:src="@drawable/ic_new_seat_3" />
 
-        <ImageButton
-            android:id="@+id/Seat5_3"
+        <ImageView
+            android:id="@+id/Seat11"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="7dp"
-            android:background="@drawable/seat_5" />
+            android:src="@drawable/seat_5" />
 
-        <ImageButton
-            android:id="@+id/Seat5_4"
+        <ImageView
+            android:id="@+id/Seat10"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="7dp"
-            android:background="@drawable/seat_5" />
+            android:src="@drawable/seat_5" />
 
-        <ImageButton
-            android:id="@+id/Seat5_5"
+        <ImageView
+            android:id="@+id/Seat9"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="7dp"
-            android:background="@drawable/seat_5" />
+            android:src="@drawable/seat_5" />
 
     </LinearLayout>
     <!--중간 원 자리-->
-    <ImageButton
-        android:id="@+id/Seat6"
+    <ImageView
+        android:id="@+id/Seat21"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/seat_6"
@@ -314,18 +355,23 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
     <!--김건호 선배님 자리-->
-    <ImageButton
-        android:id="@+id/Seat7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/seat_7"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/View7"
-        app:layout_constraintTop_toBottomOf="@+id/Seat"
-        tools:ignore="MissingConstraints" />
 
     <!--//-->
     <!--두카미 아래 로고 -->
+
+    <ImageView
+        android:id="@+id/Seat20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_new_seat_7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.774"
+        app:layout_constraintStart_toEndOf="@+id/View7"
+        app:layout_constraintTop_toBottomOf="@+id/Seat"
+        app:tint="#DADADA"
+        tools:ignore="MissingConstraints" />
+
     <ImageView
         android:id="@+id/logo"
         android:layout_width="wrap_content"
