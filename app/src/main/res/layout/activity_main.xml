@@ -100,7 +100,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintBottom_toTopOf="@+id/SEat"
+        app:layout_constraintBottom_toTopOf="@+id/first_line_seat"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Back_green"
@@ -134,11 +134,11 @@
         app:layout_constraintBottom_toBottomOf="@id/logo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/SEAT"
+        app:layout_constraintTop_toBottomOf="@+id/third_line_seat"
         tools:ignore="MissingConstraints" />
 
     <LinearLayout
-        android:id="@+id/Seat"
+        android:id="@+id/fourth_line_seat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
@@ -147,34 +147,33 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints">
 
-        <ImageView
+        <androidx.appcompat.widget.AppCompatButton
+
             android:id="@+id/Seat14"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_new_seat_41"
-            app:tint="#DADADA"/>
+            style="@style/style_seat41"
 
-        <ImageView
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+
             android:id="@+id/Seat15"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_new_seat_4"
-            app:tint="#DADADA"/>
+            style="@style/style_seat4"
 
-        <ImageView
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+
+            android:layout_marginTop="10dp"
             android:id="@+id/Seat16"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:src="@drawable/ic_new_seat_41"
-            app:tint="#DADADA"/>
+            style="@style/style_seat41"
 
-        <ImageView
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+
             android:id="@+id/Seat17"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_new_seat_4"
-            app:tint="#DADADA"/>
+            style="@style/style_seat4"
+            />
 
         <ImageView
             android:id="@+id/View6"
@@ -182,81 +181,90 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"
             android:layout_marginTop="5dp"
-            android:background="@drawable/view_6" />
+            android:background="@drawable/view_6"
+            android:gravity="center"
+            />
 
-        <ImageView
+        <androidx.appcompat.widget.AppCompatButton
+            android:button="@null"
             android:id="@+id/Seat18"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_new_seat_2"
-            app:tint="#DADADA"/>
+            android:layout_width="30dp"
+            android:layout_height="55dp"
+            android:background="@drawable/ic_new_seat_2"
+            android:gravity="center"
 
-        <ImageView
+            />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:button="@null"
             android:id="@+id/Seat19"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="30dp"
+            android:layout_height="55dp"
             android:layout_marginTop="5dp"
-            android:src="@drawable/ic_new_seat_2"
-            app:tint="#DADADA"/>
+            android:background="@drawable/ic_new_seat_2"
+            android:gravity="center"
+            />
 
     </LinearLayout>
     <!--서버 자리-->
+
+
     <LinearLayout
-        android:id="@+id/SEat"
+
+        android:id="@+id/first_line_seat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintBottom_toTopOf="@+id/SEAT"
+        app:layout_constraintBottom_toTopOf="@+id/third_line_seat"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints">
+        tools:ignore="MissingConstraints"
+        >
 
-        <ImageView
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/Seat0"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_new_seat_3"
+            style="@style/style_seat3"
             />
 
-        <ImageView
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/Seat1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:layout_marginLeft="7dp"
-            android:src="@drawable/ic_new_seat_3"
-            app:tint="#DADADA"/>
+            style="@style/style_seat3"
+             />
 
-        <ImageView
+        <androidx.appcompat.widget.AppCompatButton
+
             android:id="@+id/Seat2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:layout_marginLeft="7dp"
-            android:src="@drawable/ic_new_seat_3"
-            app:tint="#DADADA"/>
+            style="@style/style_seat3"
+            />
 
-        <ImageView
+        <androidx.appcompat.widget.AppCompatButton
+            style="@style/style_seat3"
             android:id="@+id/Seat3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:layout_marginLeft="7dp"
-            android:src="@drawable/ic_new_seat_3"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:tint="#DADADA"/>
 
-        <ImageView
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+
             android:id="@+id/Seat4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:layout_marginLeft="7dp"
-            android:src="@drawable/ic_new_seat_3"
-            app:tint="#DADADA"/>
+            style="@style/style_seat3"
+            />
+
+</LinearLayout>
 
 
-    </LinearLayout>
+
+
+
+
     <!--안드? 자리-->
     <LinearLayout
-        android:id="@+id/SEAt"
+        android:id="@+id/second_line_seat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
@@ -264,112 +272,121 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/Seat21"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints">
+        tools:ignore="MissingConstraints"
+        android:layout_marginEnd="20dp"
+        >
 
-        <ImageView
+        <androidx.appcompat.widget.AppCompatButton
+
             android:id="@+id/Seat5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_new_seat_41"
+
+            style="@style/style_seat41"
+
             />
 
-        <ImageView
+        <androidx.appcompat.widget.AppCompatButton
+
             android:id="@+id/Seat6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_new_seat_4"
+            style="@style/style_seat4"
+
             />
 
-        <ImageView
-            android:id="@+id/Seat7"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+        <androidx.appcompat.widget.AppCompatButton
+
             android:layout_marginTop="10dp"
-            android:src="@drawable/ic_new_seat_41"
+            android:id="@+id/Seat7"
+            style="@style/style_seat41"
             />
 
-        <ImageView
+        <androidx.appcompat.widget.AppCompatButton
+
             android:id="@+id/Seat8"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_new_seat_4"
+            style="@style/style_seat4"
             />
 
     </LinearLayout>
     <!--웹 자리-->
     <LinearLayout
-        android:id="@+id/SEAT"
+        android:id="@+id/third_line_seat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/SEat"
+        app:layout_constraintTop_toBottomOf="@+id/first_line_seat"
         tools:ignore="MissingConstraints">
 
-        <ImageView
+        <androidx.appcompat.widget.AppCompatButton
+
             android:id="@+id/Seat13"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_new_seat_3" />
+            style="@style/style_seat3"
+            />
 
-        <ImageView
+
+        <androidx.appcompat.widget.AppCompatButton
+
             android:id="@+id/Seat12"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="7dp"
-            android:src="@drawable/ic_new_seat_3" />
 
-        <ImageView
+            android:layout_marginLeft="7dp"
+            style="@style/style_seat3"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+
             android:id="@+id/Seat11"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="7dp"
-            android:src="@drawable/seat_5" />
 
-        <ImageView
+            android:layout_marginLeft="7dp"
+            style="@style/style_seat3"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+
             android:id="@+id/Seat10"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="7dp"
-            android:src="@drawable/seat_5" />
 
-        <ImageView
-            android:id="@+id/Seat9"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:layout_marginLeft="7dp"
-            android:src="@drawable/seat_5" />
+            style="@style/style_seat3"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+
+            android:id="@+id/Seat9"
+
+            android:layout_marginLeft="7dp"
+            style="@style/style_seat3"
+            />
 
     </LinearLayout>
     <!--중간 원 자리-->
-    <ImageView
-        android:id="@+id/Seat21"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/seat_6"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints" />
     <!--김건호 선배님 자리-->
 
     <!--//-->
     <!--두카미 아래 로고 -->
 
-    <ImageView
-        android:id="@+id/Seat20"
+    <CheckBox
+        android:id="@+id/Seat21"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:src="@drawable/ic_new_seat_7"
+        android:background="@drawable/circle_mark"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.774"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:button="@null"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:button="@null"
+        android:id="@+id/Seat20"
+        android:layout_width="82dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/ic_new_seat_7"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.428"
         app:layout_constraintStart_toEndOf="@+id/View7"
-        app:layout_constraintTop_toBottomOf="@+id/Seat"
-        app:tint="#DADADA"
+        app:layout_constraintTop_toBottomOf="@+id/fourth_line_seat"
         tools:ignore="MissingConstraints" />
 
     <ImageView
@@ -383,6 +400,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/View7"
         tools:ignore="MissingConstraints" />
+
 
 
 
