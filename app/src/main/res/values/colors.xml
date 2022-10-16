@@ -10,4 +10,7 @@
     <color name="toolbar_top_color">#66AA65</color>
     <color name="toolbar_row_color">#3AAB38</color>
     <color name="table_color">#dadada</color>
+    <color name="bg_normal">#888888</color>
+    <color name="bg_green">#84DA8D</color>
+
 </resources>

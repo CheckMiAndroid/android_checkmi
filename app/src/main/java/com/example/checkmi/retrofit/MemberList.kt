@@ -18,8 +18,8 @@ data class Data(
     val id: Int,
     @SerializedName("isAttend")
     val isAttend: Int,
-//    @SerializedName("member")
-//    val member: List<Member>
+    @SerializedName("member")
+    val member: Member
 
 )
 
