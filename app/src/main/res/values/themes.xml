@@ -18,4 +18,46 @@
         <item name="colorAccent">@color/table_color</item>
     </style>
 
+    <style name="basic_button" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@null</item>
+        <item name="background">@drawable/ic_new_seat_3</item>
+    </style>
+    <style name="green_button" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">#112233</item>
+    </style>
+
+    <style name="style_seat3" >
+
+        <item name="android:background">@drawable/ic_new_seat_3</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_width">55dp</item>
+        <item name="android:gravity">"center"</item>
+        <item name="android:button">"@null"</item>
+
+    </style>
+
+    <style name="style_seat4" >
+
+        <item name="android:background">@drawable/ic_new_seat_4</item>
+        <item name="android:layout_height">41dp</item>
+        <item name="android:layout_width">37dp</item>
+        <item name="android:gravity">"center"</item>
+        <item name="android:button">"@null"</item>
+
+    </style>
+
+    <style name="style_seat41" >
+
+        <item name="android:background">@drawable/ic_new_seat_41</item>
+        <item name="android:layout_height">41dp</item>
+        <item name="android:layout_width">37dp</item>
+        <item name="android:gravity">"center"</item>
+        <item name="android:button">"@null"</item>
+
+    </style>
+
+
+
+
+
 </resources>

@@ -11,6 +11,6 @@ object RetrofitBuilder {
         .addConverterFactory(GsonConverterFactory.create())
         .build()
 
-    val githubService = retrofit.create(MemberService::class.java)
+    val memberService = retrofit.create(MemberService::class.java)
 
 }
